@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="timer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stopwatch">
+            <i class="bi bi-list"></i>
+            <i class="bi bi-activity" id="icon"></i>
+            <img src="img/watch.png">
+            <h1 id="timer">00 : 00 : 00</h1>
+
+            <div class="img-container">
+                <img src="img/pause.png" onclick="stopTimer()"  onmouseover="pauseHover()">
+                <img src="img/play.png" onclick="startTimer()" id="playPng" onmouseover="playHover()">
+                <img src="img/reset.png" onclick="resetTimer()"  onmouseover="resetHover()">
+            </div>
+        </div>
+
+        <div class="tooltip">
+            <span class="pause" id="pause">Pause</span>
+            <span class="play" id="play">Start</span>
+            <span class="reset" id="reset">Reset</span>
+        </div>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
